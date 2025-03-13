@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | KahootClone</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 id="title">Join a Game</h1>
+        <form action="/player/">
+            <div class="form-field">
+                <label for="name">Display Name</label>
+                <input id="name" type="text" name="name" required autofocus/>
+            </div>
+            <div class="form-field">
+                <label for="pin">Game Pin</label>
+                <input id="pin" type="number" name="pin" required/>
+            </div>
+            <button id="joinButton">Join</button>
+        </form>
+        <a href="/create/" id="host">Click here to host a Kahoot!</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4CAF50, #45a3e5);
+    color: white;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Botón de Volver */
+#back {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Formularios */
+.form-field {
+    margin-bottom: 15px;
+}
+label {
+    font-size: 1.2rem;
+}
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Botones */
+button {
+    background-color: #FF4081;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #E91E63;
+}
+
+/* Enlace */
+#host {
+    display: block;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#host:hover {
+    text-decoration: underline;
+}

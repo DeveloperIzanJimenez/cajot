@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | KahootClone</title>
+    <link rel="stylesheet" href="../../css/playerGameView.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="stats">
+      <h4 id="nameText">Name:</h4>
+      <h4 id="scoreText">Score:</h4>
+      <h4 id="rankText"></h4>
+    </header>
+
+    <main>
+      <h2 id="message"></h2>
+
+      <section id="question-container" style="display: none;">
+        <h3 id="questionText" style="max-width: 100%; max-height: 400px"></h3>
+        <div class="answers">
+          <button id="answer1" class="button"></button>
+          <button id="answer2" class="button"></button>
+        </div>
+        <div class="answers">
+          <button id="answer3" class="button"></button>
+          <button id="answer4" class="button"></button>
+        </div>
+      </section>
+      
+    </main>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/playerGame.js"></script>
+    <script>
+      // Asignar eventos a los botones de respuesta
+      document
+        .getElementById("answer1")
+        .addEventListener("click", () => answerSubmitted(1));
+      document
+        .getElementById("answer2")
+        .addEventListener("click", () => answerSubmitted(2));
+      document
+        .getElementById("answer3")
+        .addEventListener("click", () => answerSubmitted(3));
+      document
+        .getElementById("answer4")
+        .addEventListener("click", () => answerSubmitted(4));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "kahootclone",
+  "version": "1.0.0",
+  "description": "A kahoot website clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.3",
+    "is-electron": "^2.2.2",
+    "jquery-node": "^0.3.0",
+    "moment": "^2.22.1",
+    "mongodb": "^3.0.10",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "node-pptx": "^1.0.0",
+    "nodejs": "^0.0.0",
+    "nodejs-pptx": "^1.2.4",
+    "openai": "^4.86.2",
+    "pdf-parse": "^1.1.1",
+    "pdf-to-img": "^4.4.0",
+    "pdf2pic": "^3.1.4",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "expect": "^29.7.0"
+  }
+}

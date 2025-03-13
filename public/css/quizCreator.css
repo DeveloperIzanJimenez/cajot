@@ -1,0 +1,122 @@
+/* Global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  #title {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Main container */
+  main {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+  }
+  
+  /* Form fields */
+  .form-field {
+    margin-bottom: 15px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Question container */
+  .question-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .question {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Answers */
+  .answer-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .answer-group input {
+    flex: 1;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn-primary {
+    background-color: #3399ff;
+    color: white;
+  }
+  .btn-primary:hover {
+    background-color: #287acc;
+  }
+  .btn-success {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .btn-success:hover {
+    background-color: #3e8e41;
+  }
+  .btn-danger {
+    background-color: #f94a1e;
+    color: white;
+  }
+  .btn-danger:hover {
+    background-color: #d7381d;
+  }
+  
+  /* File upload */
+  input[type="file"] {
+    padding: 5px;
+    border: none;
+  }
+  

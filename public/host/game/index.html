@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | KahootClone</title>
+    <link rel="stylesheet" href="../../css/hostGameView.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tajawal"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="stats">
+      <h4 id="questionNum">Question 1 / x</h4>
+      <h4 id="playersAnswered">Players Answered: 0 / x</h4>
+      <h3 id="timerText">Time Left: <span id="num">20</span></h3>
+    </header>
+
+    <main>
+      <section id="slide-section">
+        <div id="slideContainer" class="slide-container" style="display: none">
+          <img id="slideImage" src="" alt="Slide" />
+        </div>
+        <div class="slide-controls">
+          <button id="prevSlideButton" onclick="previousSlide()">
+            Previous Slide
+          </button>
+          <button id="nextSlideButton" onclick="nextSlide()">Next Slide</button>
+        </div>
+      </section>
+
+      <section id="indicator-section">
+        <div class="squares">
+          <div class="square" id="square1"></div>
+          <div class="square" id="square2"></div>
+          <div class="square" id="square3"></div>
+          <div class="square" id="square4"></div>
+        </div>
+      </section>
+
+      <section id="question-section">
+        <h2 id="question">Question</h2>
+        <div class="answers">
+          <h3 id="answer1">Answer</h3>
+          <h3 id="answer2">Answer</h3>
+          <h3 id="answer3">Answer</h3>
+          <h3 id="answer4">Answer</h3>
+        </div>
+        <button onclick="nextQuestion()" id="nextQButton">Next Question</button>
+      </section>
+
+      <section id="winners-section">
+        <h2 id="winnerTitle">Top 5 Players</h2>
+        <div class="winners">
+          <h3 id="winner1">1.</h3>
+          <h3 id="winner2">2.</h3>
+          <h3 id="winner3">3.</h3>
+          <h3 id="winner4">4.</h3>
+          <h3 id="winner5">5.</h3>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+
+    <script src="../../js/hostGame.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creator | KahootClone</title>
+    <link rel="stylesheet" href="../../css/quizCreator.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  </head>
+  <body onload="setBGColor()">
+    <header>
+      <h1 id="title">Kahoot Quiz Creator Studio</h1>
+    </header>
+
+    <main>
+      <div class="form-field">
+        <label for="name">Quiz Title</label>
+        <input id="name" type="text" name="name" placeholder="Enter quiz title" autofocus />
+      </div>
+
+      <!-- Sección de preguntas -->
+      <section id="allQuestions">
+        <div class="question-container">
+          <h2>Question 1</h2>
+          <input class="question" id="q1" type="text" placeholder="Enter question" />
+
+          <div class="answer-group">
+            <label>Answer 1:</label>
+            <input id="1a1" type="text" placeholder="Enter answer" />
+          </div>
+          <div class="answer-group">
+            <label>Answer 2:</label>
+            <input id="1a2" type="text" placeholder="Enter answer" />
+          </div>
+          <div class="answer-group">
+            <label>Answer 3:</label>
+            <input id="1a3" type="text" placeholder="Enter answer" />
+          </div>
+          <div class="answer-group">
+            <label>Answer 4:</label>
+            <input id="1a4" type="text" placeholder="Enter answer" />
+          </div>
+
+          <label>Correct Answer (1-4):</label>
+          <input class="correct" id="correct1" type="number" min="1" max="4" />
+        </div>
+      </section>
+
+      <button class="btn-primary" onclick="addQuestion()">➕ Add another question</button>
+
+      <!-- Importar PDF -->
+      <div class="form-field">
+        <label for="pdfFile">Import File (PDF):</label>
+        <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" />
+      </div>
+
+      <div class="button-group">
+        <button class="btn-success" onclick="updateDatabase()">✅ Create Quiz</button>
+        <button class="btn-danger" onclick="cancelQuiz()">❌ Cancel and Return</button>
+      </div>
+    </main>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/quizCreator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Host | KahootClone</title>
+    <link rel="stylesheet" href="../css/host.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <section id="mainContent">
+            <button id="cancel" onclick="endGame()">Cancel Game</button>
+            <h2 id="title">Join this Game using the Game Pin:</h2>
+            <h1 id="gamePinText"></h1>
+            <textarea id="players" readonly></textarea>
+            <button id="start" onclick="startGame()">Start Game</button>
+        </section>
+
+        <aside id="chatContainer">
+            <div id="messageBox"></div>
+        </aside>
+    </div>
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="../js/libs/jqueryLibrary.js"></script>
+    <script src="../js/libs/deparam.js"></script>
+    <script src="../js/host.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Host | KahootClone</title>
+        <link rel="stylesheet" href="../css/host.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            Contenido principal: jugadores y botones 
+            <div id="mainContent">
+                <button id="cancel" onclick="endGame()">Cancel Game</button>
+                <h2 id="title">Join this Game using the Game Pin:</h2>
+                <h1 id="gamePinText"></h1>
+                <textarea id="players" readonly></textarea>
+                <button id="start" onclick="startGame()">Start Game</button>
+            </div>
+
+            Contenedor del chat
+            <div id="chatContainer">
+                <div id="messageBox"></div>
+            </div>
+        </div>
+        <script src="../socket.io/socket.io.js"></script>
+        <script src="../js/libs/jqueryLibrary.js"></script>
+        <script src="../js/libs/deparam.js"></script>
+        <script src="../js/host.js"></script>
+    </body>
+</html> -->
